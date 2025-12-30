@@ -7,7 +7,7 @@ const PORT = 3000;
 
 // APK download API
 app.get("/download-apk", (req, res) => {
-  const apkPath = path.join(__dirname, "apks", "app-release.apk");
+  const apkPath = path.join(__dirname, "apks", "myapp.apk");
 
   if (!fs.existsSync(apkPath)) {
     return res.status(404).send("APK not found in Current Directory");
