@@ -1,0 +1,19 @@
+{
+  "name": "autoupdate",
+  "version": "1.0.0",
+  "description": "Unity in check auto Update Implement",
+  "license": "ISC",
+  "author": "Piyush Garg",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
