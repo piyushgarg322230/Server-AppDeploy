@@ -10,7 +10,7 @@ app.get("/download-apk", (req, res) => {
   const apkPath = path.join(__dirname, "apks", "app-release.apk");
 
   if (!fs.existsSync(apkPath)) {
-    return res.status(404).send("APK not found");
+    return res.status(404).send("APK not found in Current Directory");
   }
 
   res.setHeader("Content-Type", "application/vnd.android.package-archive");
